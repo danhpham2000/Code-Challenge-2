@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  font-family: "Young Serif";
+  background: var(--color-eggshell);
+}
+
+.container {
+  height: 100vh;
+}
+
+.card {
+  background: var(--color-white);
+  padding: 40px;
+  max-width: 650px;
+  margin: 60px auto;
+  border-radius: 20px;
+}
+.card > * {
+  height: 100%;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card h1 {
+  color: var(--color-dark-charcoal);
+  font-weight: 400;
+}
+
+.card #desc {
+  font-family: "Outfit";
+  font-weight: 300;
+}
+
+.preparation {
+  font-family: "Outfit";
+  background: var(--color-rose-white);
+  padding: 10px 15px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.preparation h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: var(--color-dark-raspberry);
+}
+
+.preparation li::marker {
+  color: var(--color-dark-raspberry);
+}
+
+.preparation li span {
+  position: relative;
+  margin-left: 20px;
+  color: var(--color-nutmeg);
+  font-weight: 600;
+}
+
+.preparation li {
+  margin-bottom: 15px;
+}
+
+.ingredients {
+  border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 20px;
+}
+.ingredients h2 {
+  color: var(--color-nutmeg);
+}
+
+.ingredients li span {
+  position: relative;
+  margin-left: 20px;
+  font-family: "Outfit";
+}
+
+.ingredients li::marker {
+  color: var(--color-nutmeg);
+}
+
+.instructions h2 {
+  color: var(--color-nutmeg);
+}
+
+.instructions {
+  border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.instructions .number {
+  color: var(--color-nutmeg);
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.instructions p {
+  font-family: "Outfit";
+}
+
+.instructions .action {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.nutrition {
+  padding-top: 20px;
+}
+
+.nutrition h2 {
+  color: var(--color-nutmeg);
+}
+
+.nutrition p {
+  font-family: "Outfit";
+  color: var(--color-wenge-brown);
+  font-weight: 400;
+}
+
+.nutrition .value {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-bottom: 1px solid var(--color-light-grey);
+  justify-content: space-between;
+}
+
+.nutrition .value p:first-child {
+  grid-column: span 3;
+  margin-left: 30px;
+}
+
+.nutrition .value p:last-child {
+  grid-column: span;
+  color: var(--color-nutmeg);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  width: 50%;
+  background: var(--color-nutmeg);
+  color: var(--color-rose-white);
+}
+.attribution a {
+  color: var(--color-rose-white);
+  text-decoration: none;
+}
